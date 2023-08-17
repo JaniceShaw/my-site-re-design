@@ -30,6 +30,12 @@ video {
   display: block;
   max-width: 100%;
 }
+html {
+  color-scheme: dark light;
+}
+body {
+  height: 100vh;
+}
 
 /* End Reset */
 
@@ -41,13 +47,14 @@ body {
 /* Header styles */
 
 .header {
-  position: relative;
+  position: fixed;
   background-color: var(--green);
   height: 110px;
   display: block;
+  width: 100%;
 }
 
-.header::before {
+/* .header::after {
   position: absolute;
   background-color: var(--blue);
   content: "";
@@ -59,30 +66,109 @@ body {
   top: 0;
   left: 0;
   z-index: 2;
+} */
+
+/* TODO: i don't want to use an empty div make work with after or before */
+.skme {
+  position: absolute;
+  background-color: var(--blue);
+  content: "";
+  height: 143px;
+  width: 100%;
+  display: block;
+  transform: skewY(2deg);
+  margin-top: -23px;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
 h1 {
-  position: absolute;
+  position: relative;
   color: var(--white);
   font-weight: 200;
   font-size: 89px;
   display: inline-block;
-  z-index: 2;
+  z-index: 3;
+  margin-top: 10px;
+  padding-left: 30px;
 }
 
 .menu-button {
   position: absolute;
-  top: 30px;
-  right: 30px;
+  top: 4.5px;
+  left: 156px;
   background-color: var(--white);
+  border: solid 5px var(--white);
   height: 60px;
   width: 60px;
   border-radius: 50%;
-  z-index: 2;
+  z-index: 3;
+  scale: 11%;
+  text-align: center;
+  transition: background-color 0.5s ease;
+
+  animation-duration: 5s;
+  animation-name: moveLeft;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-direction: fowards;
+  animation-fill-mode: forwards;
+}
+
+h1::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  top: 13px;
+  left: 175px;
+  background-color: var(--blue);
+  border-radius: 50%;
+  /* display: none; */
+  animation-name: showDot;
+  animation-delay: 5s;
+  animation-iteration-count: 1;
+  animation-direction: fowards;
 }
 
 .menu-button:hover {
-  background-color: var(--yellow);
+  cursor: pointer;
+  background-color: var(--green);
+}
+
+/* TODO: animate menu open */
+.menu-button.open::after {
+  content: "close";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: var(--red);
+  border-radius: 50%;
+  line-height: 60px;
+  margin-top: 5px;
+  /* z-index: 3; */
+}
+
+@keyframes moveLeft {
+  80% {
+    scale: 50%;
+    left: 156px;
+    top: 4.5px;
+  }
+  100% {
+    left: 90%;
+    right: 30px;
+    top: 30px;
+    scale: 100%;
+  }
+}
+
+@keyframes showDot {
+  to {
+    opacity: 0;
+  }
 }
 /* End Header styles */
 
@@ -92,42 +178,88 @@ h2 {
   font-size: 50px;
   font-weight: 300;
   line-height: 1;
+  margin-top: 120px;
+  margin-bottom: 20px;
 }
 
-.big-bg {
+h2 span,
+.frt-skills span,
+.ui-skills span {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 6px 20px 0 rgba(0, 0, 0, 0.12);
   font-weight: 300;
   display: inline-block;
+}
+
+.m30 {
+  margin-left: 30px;
+}
+
+.block-bg {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 6px 20px 0 rgba(0, 0, 0, 0.12);
+  font-weight: 300;
+  display: inline-block;
+  /* width: max-content; */
+}
+
+.rotate-up-1 {
+  transform: rotate(-1deg);
 }
 
 .rotate-up-2 {
   transform: rotate(-2deg);
 }
 
+.rotate-down-1 {
+  transform: rotate(1deg);
+}
+
 .rotate-down-2 {
   transform: rotate(2deg);
 }
 
-.big-red-bg {
+.red-bg {
   background-color: var(--red);
   color: var(--white);
+}
+
+.big-red-bg {
   padding: 0 50px 0 30px;
   margin-top: 40px;
 }
 
-.big-yellow-bg {
+.small-red-bg {
+  padding: 0 50px 0 10px;
+  margin-top: 20px;
+}
+
+.yellow-bg {
   background-color: var(--yellow);
   color: var(--darkgrey);
-  padding: 0 70px 0 20px;
+}
+
+.big-yellow-bg {
+  padding: 0 70px 2px 20px;
   margin-top: 40px;
 }
 
-.big-orange-bg {
+.small-yellow-bg {
+  padding: 0 70px 2px 20px;
+  margin-top: 25px;
+}
+
+.orange-bg {
   background-color: var(--orange);
   color: var(--white);
-  padding: 0 70px 0 20px;
+}
+
+.big-orange-bg {
+  padding: 0 70px 3px 20px;
   margin-top: 40px;
-  /* font-size: 40px; */
+}
+
+.small-orange-bg {
+  padding: 0 70px 3px 20px;
+  margin-top: 30px;
 }
 
 .round {
@@ -135,4 +267,59 @@ h2 {
   padding: 0 10px 0 5px;
   height: 50px;
   width: 50px;
+}
+
+.content {
+  /* border: solid 1px hotpink; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: left; */
+  padding-left: 8%;
+}
+
+.skills-intro {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  /* border: solid 1px hotpink; */
+  max-width: 1000px;
+  /* margin-left: 60px; */
+}
+.frt-skills:first-of-type {
+  margin-left: 40px;
+}
+.frt-skills,
+.ui-skills {
+  list-style: none;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  /* border-radius: 10px; */
+  /* padding: 10px; */
+}
+
+.frt-skills li,
+.ui-skills li {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.about {
+  margin-top: 100px;
+}
+
+.about h3 {
+  font-size: 40px;
+  background-color: var(--lightgrey);
+  padding-left: 8%;
+
+  margin-bottom: 50px;
+}
+.about p {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  max-width: 1400px;
+  padding-right: 8%;
 }
