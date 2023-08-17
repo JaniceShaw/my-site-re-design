@@ -123,8 +123,8 @@ h1::before {
   width: 20px;
   height: 20px;
   top: 13px;
-  left: 175px;
-  background-color: var(--blue);
+  left: 176px;
+  background-color: var(--green);
   border-radius: 50%;
   /* display: none; */
   animation-name: showDot;
@@ -155,7 +155,7 @@ h1::before {
   80% {
     scale: 50%;
     left: 156px;
-    top: 4.5px;
+    top: 4px;
   }
   100% {
     left: 90%;
@@ -220,6 +220,7 @@ h2 span,
 .red-bg {
   background-color: var(--red);
   color: var(--white);
+  z-index: 20;
 }
 
 .big-red-bg {
@@ -286,6 +287,9 @@ h2 span,
   max-width: 1000px;
   /* margin-left: 60px; */
 }
+.frt-skills {
+  /* border: solid 1px purple; */
+}
 .frt-skills:first-of-type {
   margin-left: 40px;
 }
@@ -304,7 +308,31 @@ h2 span,
 .ui-skills li {
   margin-top: 0;
   padding-top: 0;
+  /* border: solid 1px greenyellow; */
+  position: relative;
+  display: block;
 }
+
+/* .frt-skills li::before {
+  content: "";
+  position: absolute;
+  background-color: var(--lightgrey);
+  border-left: dashed 2px var(--darkgrey);
+  height: 100%;
+  width: 2cm;
+  top: 0;
+  left: 50px;
+} */
+
+/* .frt-skills li span::before {
+  display: block;
+  content: "";
+  margin-top: -30px;
+  width: 50%;
+  height: 30px;
+  border-right: solid 1px var(--darkgrey);
+  z-index: -1;
+} */
 
 .about {
   margin-top: 100px;
