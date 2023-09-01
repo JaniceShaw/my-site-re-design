@@ -147,7 +147,7 @@ nav {
   background-color: transparent;
   border-radius: 50%;
   text-align: left;
-  line-height: 1.5;
+  line-height: 1.6;
   /* left: 90%; */
   top: var(--nav-top);
   left: var(--nav-left);
@@ -726,6 +726,11 @@ h3 {
     --left-padding: 40px;
   }
 
+  .wrapper {
+    padding-right: 20px;
+    --left-padding: 20px;
+  }
+
   .menu-button {
     --nav-left: calc(88% + 70px);
     --nav-top: 7px;
@@ -809,6 +814,14 @@ h3 {
 
 /* mobile styles */
 @media only screen and (max-width: 485px) {
+  .wrapper {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .head-space {
+    padding-top: 140px;
+  }
+
   html {
     scroll-padding: 100px;
   }
@@ -870,6 +883,11 @@ h3 {
 }
 
 /* copied from old site for Experience section */
+
+/* TODO: fix too large image and gap on mobile */
+/* .img-container {
+  background-color: hotpink;
+} */
 
 .work-exp {
   list-style: none;
@@ -1046,7 +1064,7 @@ footer {
   background-color: var(--blue);
   text-align: center;
   padding-top: 30px;
-
+  color: var(--white);
   height: 200px;
 }
 
