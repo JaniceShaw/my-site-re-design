@@ -8,9 +8,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap"
             rel="stylesheet">
         <script defer src="script.js"></script>
+        <script src="https://kit.fontawesome.com/4a23efcdf5.js"
+            crossorigin="anonymous"></script>
     </head>
     <body>
         <header class="header">
@@ -19,18 +21,19 @@
                 aria-expanded=false>
                 <svg class="hamburger" viewBox='0 0 100 100' width='50'
                     fill="white">
-                    <rect class="line top" width='65' height='6' x='17' y=40
+                    <rect class="line top" width='65' height='6' x='17' y='36'
                         rx='5'></rect>
                     <rect class="line bottom" width='65' height='6' x='17'
-                        y="60" rx='5'></rect>
+                        y="62" rx='5'></rect>
                 </svg></button>
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About Me</a></li>
-                    <li><a href="#skills">Skills</a></li>
+                    <!-- <li><a href="#skills">Skills</a></li> -->
                     <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <!-- <li><a href="#projects">Projects</a></li> -->
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -49,7 +52,7 @@
                 <ul class="dev-skills">
                     <li><span class="red-bg small-red-bg rotate-down-1">HTML5</span></li>
                     <li><span class="yellow-bg small-yellow-bg rotate-up-1">CSS3</span></li>
-                    <li><span class="orange-bg small-orange-bg">JavaSript</span></li>
+                    <li><span class="orange-bg small-orange-bg">JavaScript</span></li>
                     <li><span class="red-bg small-red-bg">React</span></li>
                     <li><span class="yellow-bg small-yellow-bg">Git</span></li>
                 </ul>
@@ -63,62 +66,492 @@
                 <ul class="ui-skills">
                     <li><span class="red-bg small-red-bg rotate-up-1">Figma</span></li>
                     <li><span class="yellow-bg small-yellow-bg">Adobe XD</span></li>
-                    <li><span class="orange-bg small-orange-bg">Adobe Photoshop</span></li>
+                    <li><span class="orange-bg small-orange-bg">Adobe PhotoShop</span></li>
                     <li><span class="red-bg small-red-bg rotate-down-1">Miro</span></li>
                 </ul>
             </section>
         </div>
 
         <section class="about" id="about">
-            <div class="title">
+            <div class="title ">
                 <h3>About Me</h3>
                 <div class="image-wrapper">
                     <span class="image">
+                        <!-- TODO: add big / small image -->
                         <picture>
-                            <source srcset="smaller-pic.jpg"
+                            <source srcset="images/lilly.jpg"
                                 media="(max-width:600px)" />
-
                             <img src="images/lilly.jpg"
                                 alt="why does it matter how i look?" />
                         </picture>
-
                     </span>
                 </div>
             </div>
-            <div class="wrapper">
-                <p>I am an all-round web developer with a wide range of
-                    experience
-                    spanning many years. I have experience working as a
-                    frontend
-                    developer as well as with UI design.</p><p>
 
-                    I am currently based in Zurich and recently completed
+            <div class="wrapper head-space">
+                <p>I'm an all-round web developer with a wide range of
+                    experience
+                    spanning many years. My most recent experience is as a
+                    frontend developer & UI designer. </p><p>
+
+                    I am currently based in Zurich and completed
                     the
                     Full-stack development course at the SIT Academy. I am
                     available
                     for consultant and permanent development roles.</p>
                 <p>
-                    When I'm not working I enjoy playing the guitar, jamming
-                    with
-                    friends, learning to play the drums and piano,
-                    practising my
-                    German and photography.</p>
-                <p> Projects I've made in my spare time to learn new web
-                    technologies.</p>
+                    When I'm not working I enjoy playing the guitar,
+                    <a href="https://soundcloud.com/jj-meanders" target="_blank">jamming
+                        with friends</a>, learning to play the drums and piano,
+                    practising my German and walking my dog.
+                </p>
+                <!-- <p>
+                    <a href="projects/">Projects</a> I've made in my spare time
+                    to
+                    learn new web technologies.
+                </p> -->
+                <!-- TODO: add links and icons move projects to project section -->
+                <div class="links">
+                    <a href="https://github.com/JaniceShaw" target="_blank"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/janice-shaw/"
+                        target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="documents/CV-Janice-Shaw-2023-online.pdf"
+                        target="_blank"><i class="fa-solid fa-file-arrow-down"></i>CV</a>
+                </div>
+
             </div>
         </section>
 
-        <section class="about" id="skills">
-            <div class="title">
-                <h3>skills</h3>
-                <div class="image-wrapper"><span class="image">
-                        <!-- <img
-                            src="lilly.jpg" alt="why does it matter how i look?"> -->
-                    </span></div>
-            </div>
-            <div class="wrapper">
-                <h4>Languages & Frameworks</h4>
-            </section>
+        <!-- <section class="skills" id="skills">
+            <div class="title ">
+                <h3>Skills</h3> -->
+        <!-- TODO: add image or remove code -->
+        <!-- <div class="image-wrapper"><span class="image"></span></div> -->
+        <!-- </div>
+            <div class="wrapper skill-groups head-space">
+                <div class="lang-frame">
+                    <h4>Languages &#038; Frameworks</h4>
+                    <ul>
+                        <li data-level="3">HTML5</li>
+                        <li data-level="3">CSS3</li>
+                        <li data-level="3">SCSS</li>
+                        <li data-level="1">LESS</li>
+                        <li data-level="3">JavaScript</li>
+                        <li data-level="2">jQuery</li>
+                        <li data-level="2">React</li>
+                        <li data-level="2">Ext Js</li>
+                        <li data-level="2">XML</li>
+                        <li data-level="3">Bootstrap</li>
+                        <li data-level="2">Foundation</li>
+                        <li data-level="2">WordPress</li>
+                        <li data-level="2">Django</li>
+                        <li data-level="2">Moodle</li>
+                        <li data-level="2">SQL</li>
+                        <li data-level="1">PHP</li>
+                        <li data-level="1">Python</li>
+                    </ul>
+                </div>
+                <div class="apps">
+                    <h4>Software &#038; Apps</h4>
+                    <ul>
+                        <li data-level="2">Photoshop</li>
+                        <li data-level="3">Adobe XD</li>
+                        <li data-level="1">Flash</li>
+                        <li data-level="2">PyCharm</li>
+                        <li data-level="2">PhpStorm</li>
+                        <li data-level="1">Dreamweaver</li>
+                        <li data-level="2">JIRA</li>
+                        <li data-level="2">Lumesse CourseBuilder</li>
+                        <li data-level="2">Articulate - Storyline</li>
+                        <li data-level="2">Console</li>
+                        <li data-level="2">Git</li>
+                        <li data-level="1">MySQL</li>
+                        <li data-level="3">Figma</li>
+                        <li data-level="3">Miro</li>
+                    </ul>
+                </div>
+                <div class="other">
+                    <h4>Operating Systems</h4>
+                    <ul> <li data-level="3">Mac OS</li>
+                        <li data-level="3">Windows</li>
+                        <li data-level="2">Linux (Ubuntu)</li></ul></div>
+                <div class="other">
+                    <h4>Other</h4>
+                    <ul>
 
-        </body>
-    </html>
+                        <li data-level="3">Accessibility</li>
+                        <li data-level="3">SEO</li>
+                        <li data-level="3">Responsive web design</li>
+                        <li data-level="2">Email development</li>
+                        <li data-level="2">SCRUM</li>
+
+                    </ul></div>
+                <div class="other">
+                    <h4>Spoken Languages</h4>
+                    <ul>
+
+                        <li>English (native speaker)</li> -->
+        <!-- <li>Spanish (intermediate)</li> -->
+        <!-- <li>German A2</li>
+                    </ul>
+                </div> -->
+
+        <!-- <p class="skills-key">
+                    <small>Click skills to view:
+                        <span class="stars">&#9734;&#9734;&#9734;</span>Excellent
+                        working knowledge of.
+                        <span class="stars">&#9734;&#9734;</span>Good
+                        working
+                        knowledge of, <span class="stars">&#9734;</span>Experience
+                        of
+                        working with.
+                    </small>
+                </p> -->
+
+        <!-- </section> -->
+
+        <section class="experience" id="experience">
+            <div class="title">
+                <h3>Experience & Skills</h3>
+                <div class="image-wrapper"><span class="image"></span></div>
+            </div>
+            <div class="wrapper head-space">
+                <ul class="work-exp">
+                    <li>
+                        <img src="images/work/idparc-logo.png" alt="iDPARC" />
+                        <br />
+                        <h4>Frontend Developer <small>(2022-2023)</small></h4>
+                        <p><a href="http://www.idparc.ch" target="_blank"
+                                class="work">iDPARC</a></p>
+                        <p>My primary task was UI design and development of
+                            a new website. I created wireframes, prototypes
+                            and mock-ups in Figma.
+                            And I developed the UI with the JavaScript
+                            framework Ext JS. </p>
+                        <div class="work-skills">
+                            <h5>Skills:</h5>
+                            <ul>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>SCSS</li>
+                                <li>JavaScript</li>
+                                <li>Ext JS</li>
+                                <li>Git</li>
+                                <li>Figma</li>
+                                <li>Miro</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/work/leo-logo.png"
+                            alt="Leo Learning" />
+                        <br />
+                        <h4>Freelance UI Designer <small>(2018)</small></h4>
+                        <p><a href="http://www.leolearning.com"
+                                target="_blank" class="work">Leo Learning</a></p>
+                        <p>I created mock-ups and prototypes using Adobe XD.</p>
+                        <div class="work-skills">
+                            <h5>Skills:</h5>
+                            <ul>
+                                <li>Adobe XD</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/work/into.png"
+                            alt="INTO University Partnership" />
+                        <br />
+                        <h4>Web Developer <small>(2016 &#8211; 2017)</small></h4>
+                        <p><a href="http://www.intostudy.com/" class="work"
+                                target="_blank">INTO University Partnerships</a></p>
+                        <p>I contributed to a range of projects building
+                            online learning platforms, creating web page
+                            templates and associated responsive stylesheets.</p><br />
+                        <p>I made responsive layouts for a range of mobile
+                            devices, from mock-ups and wire frames, and
+                            updated Django (React) and Moodle templates. I
+                            was working with a Git workflow on the
+                            Ubuntu operating system.</p><br />
+                        <p>I collaborated with other developers and
+                            programmers, scrum masters and product owners,
+                            presenting work to colleagues in fortnightly
+                            sprint reviews.</p>
+                        <div class="work-skills">
+                            <h5>Skills:</h5>
+                            <ul>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>Sass</li>
+                                <li>JavaScript</li>
+                                <li>React</li>
+                                <li>Bootstrap</li>
+                                <li>Git</li>
+                                <li>Moodle</li>
+                                <li>Django</li>
+                                <li>Photoshop</li>
+                                <li>SCRUM</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/work/brightwave-logo.png"
+                            alt="brightwave.co.uk" />
+                        <br />
+                        <h4>Content Integrator <small>(2014 &#8211; 2016)</small></h4>
+                        <p><a href="http://www.brightwave.co.uk"
+                                class="work"
+                                target="_blank">brightwave</a></p>
+                        <p>I was employed as a Content Integrator at
+                            Brightwave, building e-learning courses using
+                            XML, HTML, Lumesse - CourseBuilder and Articulate -
+                            Storyline.
+                            I also edited graphics using Adobe Photoshop.
+                        </p>
+                        <div class="work-skills">
+                            <h5>Skills:</h5>
+                            <ul>
+                                <li>HTML</li>
+                                <li>XML</li>
+                                <li>CSS</li>
+                                <li>Lumesse CourseBuilder</li>
+                                <li>Storyline</li>
+                                <li>Photoshop</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/work/cwt-digital-logo.png"
+                            alt="CWT Digital" />
+                        <br />
+                        <h4>Freelance Frontend Developer <small>(2015)</small></h4>
+                        <p class="work">CWT Digital </p>
+                        <p>
+                            While employed by CWT Digital, I worked
+                            on projects built using Foundation and Bootstrap
+                            frameworks, to create responsive websites.
+                        </p>
+                        <div class="work-skills">
+                            <h5>Skills:</h5>
+                            <ul>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>Sass</li>
+                                <li> LESS</li>
+                                <li>jQuery</li>
+                                <li>Foundation</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <br />
+                        <h4>Freelance Web Developer <small>(2010 &#8211;
+                                2015)</small></h4>
+                        <p>
+                            While travelling in Europe and back in the UK, I
+                            worked for
+                            different clients on a variety of projects,
+                            designing and
+                            developing responsive websites. I also worked on
+                            projects for
+                            EPG Health Media.
+                        </p>
+                        <div class="work-skills">
+                            <h5>Skills:</h5>
+                            <ul>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>jQuery</li>
+                                <li>WordPress</li>
+                                <li>PHP</li>
+                                <li>Responsive</li>
+                                <li>design</li>
+                                <li>Photoshop</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/work/epg-sm.png"
+                            alt="epghealthmedia.com" />
+                        <br />
+                        <h4>Web Developer <small>(2007 &#8211; 2010)</small></h4>
+                        <p>
+                            <a href="http://www.epghealthmedia.com"
+                                class="work"
+                                target="_blank">EPG Health Media </a>
+                        </p>
+                        <p>
+                            As a Web Developer at EPG Health Media, I
+                            designed, updated and developed their sites. I
+                            also designed
+                            promotional materials for print.
+                        </p>
+                        <div class="work-skills">
+                            <h5>Skills: </h5>
+                            <ul>
+                                <li>Coldfusion</li>
+                                <li>SQL</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>jQuery</li>
+                                <li>Photoshop</li>
+                                <li>Illustrator</li>
+                                <li>Dreamweaver</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <br />
+                        <h4>
+                            Freelance Web Developer <small>(2005 &#8211;
+                                2007)</small>
+                        </h4>
+                        <p>
+                            I worked for various clients while travelling in
+                            Central
+                            America, designing and developing websites, I
+                            also studied
+                            Spanish at the Universidad Nacional Autonoma De
+                            Mexico.
+                        </p>
+                        <div class="work-skills">
+                            <h5>Skills: </h5>
+                            <ul>
+                                <li>Photoshop</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>jQuery</li>
+                                <li>Flash</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/work/bd.png" alt="lbbd.gov.uk" />
+                        <br />
+                        <h4>
+                            Web Systems Development Officer
+                            <small>(2001 &#8211; 2005)</small>
+                        </h4>
+                        <p>
+                            <a href="http://www.lbbd.gov.uk/" class="work"
+                                target="_blank">London Borough of Barking
+                                &#038; Dagenham</a>
+                        </p>
+                        <p>
+                            I was employed as a
+                            Web Systems Development Officer, working
+                            within a team on the council website, schools
+                            intranet and
+                            microsites. I assisted with the design,
+                            development and
+                            maintenance of these sites, gaining experience
+                            in a range of
+                            applications:
+                        </p>
+                        <div class="work-skills">
+                            <h5>Skills:</h5>
+                            <ul>
+                                <li>XHTML</li>
+                                <li>CSS</li>
+                                <li>javaScript</li>
+                                <li>SQL</li>
+                                <li>Coldfusion</li>
+                                <li>Microsoft Access</li>
+                                <li>XML</li>
+                                <li>Photoshop</li>
+                                <li>Acrobat</li>
+                                <li>Illustrator</li>
+                                <li>Flash</li>
+                                <li>actionscript</li>
+                                <li>Dreamweaver</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+        <!-- <section class="projects" id="projects">
+                <div class="title ">
+                    <h3>Projects</h3>
+                    <div class="image-wrapper"><span class="image"></span></div>
+                </div>
+                <div class="wrapper head-space"> </div>
+            </section> -->
+
+        <section class="education" id="education">
+            <div class="title ">
+                <h3>Education</h3>
+                <div class="image-wrapper"><span class="image"></span></div>
+            </div>
+            <div class="wrapper head-space">
+                <ul>
+                    <li>
+                        <p><strong>SIT Academy </strong> - 2021-2022</p>
+                        <p>Full-stack development</p>
+                    </li>
+
+                    <li>
+                        <p><strong>Bellingua </strong> - 2018-2019</p>
+                        <p>German A1, A2, B1</p>
+                    </li>
+
+                    <li>
+                        <p><strong>London College of Communication (part of the
+                                University of the
+                                Arts London)</strong> - 2000-2001</p>
+                        <p>Photoshop and Web Design Courses - EDEXCEL</p>
+                    </li>
+
+                    <!-- <h4>University</h4> -->
+                    <li>
+                        <p><strong>University of Central England</strong> -
+                            1997-2000</p>
+                        <p>BA (Hons) Fine Art</p>
+                    </li>
+                    <li>
+                        <p><strong>Continued learning</strong></p>
+                        <p class="sep">
+                            <a href="http://www.sitepoint.com/" target="_blank">Sitepoint</a>
+                            |
+                            <a href="https://teamtreehouse.com/janiceshaw2"
+                                target="_blank">Treehouse</a>
+                            |
+                            <a href="https://www.futurelearn.com"
+                                target="_blank">Future
+                                Learn</a>
+                            |
+                            <a href="http://udemy.com" target="_blank">Udemy</a>
+                        </p>
+                    </li>
+
+                </ul>
+
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="title ">
+                <h3>Contact</h3>
+                <div class="image-wrapper"><span class="image"></span></div>
+            </div>
+            <div class="wrapper head-space">
+
+                <p>
+                    Please contact me with any enquiries.
+                </p>
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:hello@janiceshaw.com">hello@janiceshaw.com</a>
+                </p>
+
+            </div>
+        </section>
+
+        <footer>&copy; <span id="year">2023</span> janiceshaw.com</footer>
+
+    </body>
+</html>
