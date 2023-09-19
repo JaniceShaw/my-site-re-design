@@ -1,5 +1,3 @@
-# Page Elements for the re-design of www.janiceshaw.com
+# Re-design of www.janiceshaw.com
 
-- page-elements-01 : working on ways to display the header and text blocks.
-- page-elements-02 : simplified text blocks, letting the text rotate, working on load animation.
-- full-site :
+![website](https://janiceshaw.com/images/github/site-v2.png)
