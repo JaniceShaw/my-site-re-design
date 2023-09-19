@@ -1036,7 +1036,9 @@ ul.work-exp li:nth-of-type(4n) {
   font-size: 1.5rem;
   /* text-align: right; */
 }
-
+.contact p {
+  margin-bottom: 1em;
+}
 footer {
   position: relative;
   background-color: var(--green);
