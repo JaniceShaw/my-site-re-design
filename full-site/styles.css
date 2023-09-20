@@ -674,24 +674,6 @@ h3 {
   /* flex-grow: 3; */
 }
 
-/* for dark mode -- just for testing at the moment */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--darkgrey);
-  }
-
-  :root {
-    --blue: var(--blue-600);
-    --green: var(--green-600);
-    --white: var(--lightgrey);
-    --red: var(--red-600);
-    --yellow: var(--yellow-600);
-    --orange: var(--orange-600);
-    --darkgrey: black;
-    --text-color: var(--lightgrey);
-  }
-}
-
 /* All media queries */
 
 @media only screen and (max-width: 1460px) {
@@ -1089,4 +1071,35 @@ strong {
 }
 .education li {
   margin-bottom: 20px;
+}
+
+/* for dark mode -- just for testing at the moment */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--darkgrey);
+  }
+
+  .work-exp > li,
+  .work-skills {
+    background-color: #5a5f63;
+    /* background-color: hotpink; */
+  }
+
+  .title::after {
+    background-color: var(--green);
+  }
+  .title h3 {
+    color: var(--lightgrey);
+  }
+
+  :root {
+    --blue: var(--blue-600);
+    --green: var(--green-600);
+    --white: var(--lightgrey);
+    --red: var(--red-600);
+    --yellow: var(--yellow-600);
+    --orange: var(--orange-600);
+    --darkgrey: black;
+    --text-color: var(--lightgrey);
+  }
 }
